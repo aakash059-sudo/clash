@@ -1,0 +1,6 @@
+{
+  "name": "Swaad & Swag Market",
+  "description": "Vibrant 15-minute Gen-Z grocery delivery for viral pantry drops, late-night snacks, fresh produce, and meal kits.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

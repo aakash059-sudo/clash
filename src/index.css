@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Radio Canada Big", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Red Hat Text", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, monospace;
+
+  --color-crimson: #95002A;
+  --color-crimson-hover: #BE123C;
+  --color-lime-zest: #B9F079;
+  --color-lime-ink: #1E3700;
+  --color-lime-deep: #3E6A00;
+  --color-spice: #872700;
+  --color-spice-soft: #FFDBD0;
+  --color-canvas: #FFF8F7;
+  --color-surface-low: #FFF0F0;
+  --color-surface-mid: #FFE9E9;
+  --color-surface-high: #FFE1E2;
+  --color-ink: #271718;
+  --color-ink-muted: #5B4041;
+  --color-outline-soft: #E3BDBF;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

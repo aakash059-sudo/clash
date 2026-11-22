@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sichuan Truffle Chili Crisp — SWAAD AND SWAG RESTAURANT</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'light-primary': '#95002A',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#BE123C',
+        'light-on-primary-container': '#FFD0D2',
+        'light-secondary': '#3E6A00',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#B9F079',
+        'light-on-secondary-container': '#1E3700',
+        'light-tertiary': '#872700',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#FFDBD0',
+        'light-on-tertiary-container': '#390C00',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FFF8F7',
+        'light-on-background': '#271718',
+        'light-surface': '#FFF8F7',
+        'light-surface-dim': '#F0D3D4',
+        'light-surface-bright': '#FFF8F7',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#FFF0F0',
+        'light-surface-container': '#FFE9E9',
+        'light-surface-container-high': '#FFE1E2',
+        'light-surface-container-highest': '#F9DCDC',
+        'light-on-surface': '#271718',
+        'light-surface-variant': '#FFDADB',
+        'light-on-surface-variant': '#5B4041',
+        'light-outline': '#8F6F70',
+        'light-outline-variant': '#E3BDBF',
+        'light-inverse-surface': '#3E2C2D',
+        'light-inverse-on-surface': '#FFEDEC',
+        'light-inverse-primary': '#FFB2B7',
+        'dark-primary': '#FFB2B7',
+        'dark-on-primary': '#67001B',
+        'dark-primary-container': '#BE123C',
+        'dark-on-primary-container': '#FFD0D2',
+        'dark-secondary': '#A0D663',
+        'dark-on-secondary': '#1E3700',
+        'dark-secondary-container': '#447200',
+        'dark-on-secondary-container': '#BDF57D',
+        'dark-tertiary': '#FFB59D',
+        'dark-on-tertiary': '#5D1800',
+        'dark-tertiary-container': '#AF3600',
+        'dark-on-tertiary-container': '#FFD2C4',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#1E0F10',
+        'dark-on-background': '#F9DCDC',
+        'dark-surface': '#1E0F10',
+        'dark-surface-dim': '#1E0F10',
+        'dark-surface-bright': '#473435',
+        'dark-surface-container-lowest': '#180A0B',
+        'dark-surface-container-low': '#271718',
+        'dark-surface-container': '#2B1B1C',
+        'dark-surface-container-high': '#372626',
+        'dark-surface-container-highest': '#423031',
+        'dark-on-surface': '#F9DCDC',
+        'dark-surface-variant': '#5B4041',
+        'dark-on-surface-variant': '#E3BDBF',
+        'dark-outline': '#AA888A',
+        'dark-outline-variant': '#5B4041',
+        'dark-inverse-surface': '#F9DCDC',
+        'dark-inverse-on-surface': '#3E2C2D',
+        'dark-inverse-primary': '#BB0F3A',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Radio Canada Big"', 'sans-serif'],
+        'headline': ['"Radio Canada Big"', 'sans-serif'],
+        'title': ['"Radio Canada Big"', 'sans-serif'],
+        'body': ['"Red Hat Text"', 'sans-serif'],
+        'label': ['"Red Hat Text"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['56px', { lineHeight: '62px', letterSpacing: '-1.5px', fontWeight: '800' }],
+        'display-lg-mobile': ['32px', { lineHeight: '36px', letterSpacing: '-0.75px', fontWeight: '800' }],
+        'headline-lg': ['36px', { lineHeight: '42px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'title-lg': ['20px', { lineHeight: '26px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '240ms',
+        'surface-exit': '160ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:wght@600;700;800&amp;family=Red+Hat+Text:wght@400;500;600;700&amp;family=Source+Code+Pro:wght@600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+    <!-- Top Announcement Strip -->
+    <div class="bg-light-on-surface text-light-surface py-gutter-xs px-page-margin">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-gutter-md">
+        <div class="flex items-center gap-gutter-sm">
+          <span class="material-symbols-outlined text-title-md text-light-secondary-container" aria-hidden="true">bolt</span>
+          <span data-design-text-token="label-sm" class="font-label text-label-sm">15-minute delivery till 2 AM · Free over $25</span>
+        </div>
+        <span data-design-text-token="label-sm" class="hidden sm:inline font-mono text-label-sm text-light-secondary-container tabular-nums">DROP #042 LIVE</span>
+      </div>
+    </div>
+
+    <!-- Main Sticky Header -->
+    <header class="sticky top-0 z-30 bg-light-surface border-b border-light-outline-variant">
+      <div class="max-w-7xl mx-auto px-gutter-md lg:px-page-margin py-gutter-md flex items-center justify-between gap-gutter-md">
+
+        <!-- Custom SWAAD AND SWAG RESTAURANT Brand Mark -->
+        <a href="../storefront-home/StorefrontHome.html" class="flex items-center gap-gutter-sm shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-light-primary rounded-md">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-md bg-light-primary text-light-on-primary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15.5 6.5C15.5 5.1 14.1 4 12 4C9.7 4 8 5.4 8 7.3C8 9.2 9.6 10.1 12.2 10.8C14.7 11.5 16.5 12.6 16.5 15.2C16.5 17.8 14.4 19.5 11.6 19.5C8.8 19.5 6.8 18 6.5 15.8H9.5C9.8 16.7 10.6 17.2 11.7 17.2C13 17.2 13.8 16.5 13.8 15.4C13.8 14.2 12.9 13.5 10.6 12.9C7.9 12.2 5.4 10.9 5.4 7.5C5.4 4.3 8.1 2 11.9 2C15.4 2 18 3.9 18.2 6.5H15.5Z" fill="currentColor"></path>
+              <circle cx="19" cy="18.5" r="2.2" fill="#B9F079"></circle>
+            </svg>
+          </span>
+          <span class="flex flex-col leading-none">
+            <span data-design-text-token="title-lg" class="font-headline text-title-lg text-light-on-surface tracking-tight">SWAAD AND SWAG</span>
+            <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">RESTAURANT</span>
+          </span>
+        </a>
+
+        <!-- Desktop Aisle Navigation -->
+        <nav aria-label="Primary aisles" class="hidden xl:flex items-center gap-gutter-lg">
+          <a href="../storefront-home/StorefrontHome.html#catalog" class="font-label text-label-lg text-light-on-surface hover:text-light-primary transition-colors duration-state-change">Late-Night Snacks</a>
+          <a href="../storefront-home/StorefrontHome.html#catalog" class="font-label text-label-lg text-light-primary transition-colors duration-state-change">Viral Pantry</a>
+          <a href="../storefront-home/StorefrontHome.html#catalog" class="font-label text-label-lg text-light-on-surface hover:text-light-primary transition-colors duration-state-change">Fresh Produce</a>
+          <a href="../storefront-home/StorefrontHome.html#bundles" class="font-label text-label-lg text-light-on-surface hover:text-light-primary transition-colors duration-state-change">Meal Kits</a>
+        </nav>
+
+        <!-- Searchbar & Bag Trigger -->
+        <div class="flex items-center gap-gutter-sm flex-1 max-w-md justify-end">
+          <!-- COMPONENT: searchbar-standard -->
+          <form data-component-id="searchbar-standard" data-component-type="searchbar" data-component-variant="standard" role="search" class="hidden md:flex flex-1 items-center gap-gutter-sm bg-light-surface-container-lowest border border-light-outline-variant rounded-full pl-gutter-md pr-gutter-xs py-gutter-xs focus-within:border-light-primary transition-colors duration-state-change">
+            <span class="material-symbols-outlined text-title-md text-light-on-surface-variant" aria-hidden="true">search</span>
+            <input id="search-input-01" type="search" aria-label="Search groceries" placeholder="Search matcha, ramen, avocados..." class="w-full bg-transparent border-0 p-0 font-body text-body-md text-light-on-surface placeholder:text-light-outline focus:ring-0">
+            <button type="submit" aria-label="Submit search" class="inline-flex items-center justify-center px-gutter-md py-gutter-xs rounded-full bg-light-surface-container text-light-on-surface font-label text-label-sm hover:bg-light-surface-container-high transition-colors duration-state-change">
+              <span data-design-text-token="label-sm">Go</span>
+            </button>
+          </form>
+
+          <!-- Bag Trigger Button -->
+          <!-- COMPONENT: button-with-icon -->
+          <button id="open-bag-btn" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" aria-label="Open shopping bag" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-full bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-light-primary shrink-0">
+            <span class="material-symbols-outlined text-title-md" aria-hidden="true">shopping_bag</span>
+            <span data-design-text-token="label-lg">Bag</span>
+            <!-- COMPONENT: badge-numeric -->
+            <span id="bag-count-badge" data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" role="status" aria-hidden="true" class="inline-flex items-center justify-center min-w-5 h-5 px-gutter-xs rounded-full bg-light-secondary-container text-light-on-secondary-container font-mono text-label-sm tabular-nums">
+              <span id="bag-count-text" data-design-text-token="label-sm">2</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+      <!-- Breadcrumb Back Link -->
+      <div class="max-w-7xl mx-auto px-gutter-md lg:px-page-margin pt-gutter-lg">
+        <a href="../storefront-home/StorefrontHome.html" class="inline-flex items-center gap-gutter-xs font-label text-label-lg text-light-on-surface-variant hover:text-light-primary transition-colors">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_back</span>
+          <span data-design-text-token="label-lg">Back to aisles</span>
+        </a>
+      </div>
+
+      <!-- Product Detail Hero -->
+      <section class="max-w-7xl mx-auto px-gutter-md lg:px-page-margin py-gutter-lg lg:py-gutter-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-start">
+
+          <!-- Left Column: Product Imagery -->
+          <div class="lg:col-span-6 flex flex-col gap-gutter-md">
+            <div class="relative aspect-square w-full rounded-xl bg-light-surface-container-low border border-light-outline-variant overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCMbPP-0BxWOmqKL3RWnkMhcfe3Zvu12GLZu5oj85rhsmhXJONLgqzj2K8T4Kp46BlpfNDrkm1jQN23F12wOYRo95NpE9eZSf8CTbUEAHFGAIkMn-TGW05vqC-4aNcjMzw6jnUvAK0FJ7T68OYdo0rdyMpDw2tIV9yn1PwcPMO0bK-aB4hT83DKpWZU2tZeXMAeUDZeZ0xLp4wW2Z-MgrnPtBI-4H86nuGzlgpJ8Wa9Bu6BH-usvK3PTSM" alt="Jar of Sichuan Truffle Chili Crisp with toasted sesame seeds" class="w-full h-full object-cover">
+              <span class="absolute top-gutter-md left-gutter-md inline-flex items-center px-gutter-sm py-gutter-xs rounded-full bg-light-secondary-container text-light-on-secondary-container font-label text-label-sm">VIRAL DROP</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-gutter-md">
+              <div class="aspect-square rounded-lg bg-light-surface-container-lowest border-2 border-light-primary overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrCMbPP-0BxWOmqKL3RWnkMhcfe3Zvu12GLZu5oj85rhsmhXJONLgqzj2K8T4Kp46BlpfNDrkm1jQN23F12wOYRo95NpE9eZSf8CTbUEAHFGAIkMn-TGW05vqC-4aNcjMzw6jnUvAK0FJ7T68OYdo0rdyMpDw2tIV9yn1PwcPMO0bK-aB4hT83DKpWZU2tZeXMAeUDZeZ0xLp4wW2Z-MgrnPtBI-4H86nuGzlgpJ8Wa9Bu6BH-usvK3PTSM" alt="Chili Crisp jar front view" class="w-full h-full object-cover">
+              </div>
+              <div class="aspect-square rounded-lg bg-light-surface-container-lowest border border-light-outline-variant overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAMPczDxrykmkDiYKBwARN--cu4Fe7aPv5AJ6K09hxjXFAERGyNoyRbV2hXOWiUIa8LFYG9UiG7XsezyqbOOp44tMblfoCr3k7_MpgYvUBX221u4FoUX9AE39B8P4M3tOAvQoZ4GpGaEWR_Fy_I_pXt3qkZ1duPCCBGt_w9Sco3c15AWqfPsu4YwjQIbD6SGYY1MmpVXybvBNdptITKe86TBgtqAUfdBILc2bKg1cIY-gWLU-Kq2bY2sw" alt="Paired with spicy ramen" class="w-full h-full object-cover">
+              </div>
+              <div class="aspect-square rounded-lg bg-light-surface-container-lowest border border-light-outline-variant overflow-hidden">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrC0xAuoR5G06RJzgPEEQU1AcYRgGmU_mRtfLdMsDbF0d7ur-PAYd5k94f9f-ALLbEo6_NwmWFY8f68JLeN-agwhe7V65MRrZt9mJJaXsxso3VfWtGA9kXVzV_1fKPzrYF_2ktga4BKvVY_Ygp8CgoV81gwQL-4xETpgIlvk0MOQp8IGne8-YpdAHsEfjtkP9SFter705mewri-q03qBZCG6UepPrb09dGAMkjlyHoZ1s7_8Mc5apkncoKYNt8yU6Xw" alt="Served on warm sourdough" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Product Info & Controls -->
+          <div class="lg:col-span-6 flex flex-col gap-gutter-lg bg-light-surface-container-low border border-light-outline-variant rounded-xl p-gutter-lg lg:p-gutter-xl">
+            <div class="flex flex-col gap-gutter-sm">
+              <div class="flex flex-wrap items-center justify-between gap-gutter-sm">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">VIRAL PANTRY · 170G JAR</span>
+                <div class="flex items-center gap-gutter-xs">
+                  <span class="material-symbols-outlined text-title-md text-light-tertiary" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                  <span data-design-text-token="label-sm" class="font-mono text-label-sm text-light-on-surface tabular-nums">4.9 (128)</span>
+                </div>
+              </div>
+
+              <h1 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile lg:text-headline-lg text-light-on-surface text-balance">
+                Sichuan Truffle Chili Crisp
+              </h1>
+
+              <div class="flex items-center gap-gutter-md pt-gutter-xs">
+                <span id="detail-price" data-design-text-token="headline-md" class="font-mono text-headline-md text-light-on-surface tabular-nums">$8.50</span>
+                <span class="inline-flex items-center gap-gutter-xs px-gutter-sm py-gutter-xs rounded-full bg-light-secondary-container text-light-on-secondary-container font-label text-label-sm">
+                  <span class="material-symbols-outlined text-body-md" aria-hidden="true">bolt</span>
+                  <span data-design-text-token="label-sm">15-MIN DROP</span>
+                </span>
+              </div>
+            </div>
+
+            <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface-variant text-pretty">
+              Small-batch Erjingtiao chilies, crispy shallots, toasted sesame, and black truffle oil. Spoon it over ramen, eggs, pizza, or vanilla ice cream.
+            </p>
+
+            <!-- Pack Size Selector -->
+            <div class="flex flex-col gap-gutter-sm">
+              <span data-design-text-token="label-lg" class="font-label text-label-lg text-light-on-surface">Select pack size</span>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter-sm" role="group" aria-label="Pack size options">
+                <button type="button" data-pack="Single (170g)" data-price="8.50" aria-pressed="true" onclick="selectPack(this)" class="pack-btn flex flex-col items-start p-gutter-md rounded-lg border-2 border-light-primary bg-light-surface-container-lowest text-left transition-colors duration-state-change">
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg text-light-on-surface">Single Jar</span>
+                  <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-primary tabular-nums">$8.50</span>
+                </button>
+
+                <button type="button" data-pack="2-Pack (340g)" data-price="15.50" aria-pressed="false" onclick="selectPack(this)" class="pack-btn flex flex-col items-start p-gutter-md rounded-lg border border-light-outline-variant bg-light-surface-container-lowest text-left hover:border-light-primary transition-colors duration-state-change">
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg text-light-on-surface">2-Pack</span>
+                  <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant tabular-nums">$15.50</span>
+                </button>
+
+                <button type="button" data-pack="Party 4-Pack" data-price="29.00" aria-pressed="false" onclick="selectPack(this)" class="pack-btn flex flex-col items-start p-gutter-md rounded-lg border border-light-outline-variant bg-light-surface-container-lowest text-left hover:border-light-primary transition-colors duration-state-change">
+                  <span data-design-text-token="label-lg" class="font-label text-label-lg text-light-on-surface">4-Pack</span>
+                  <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface-variant tabular-nums">$29.00</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quantity Stepper + Primary Add to Bag -->
+            <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-sm">
+              <div class="inline-flex items-center gap-gutter-sm bg-light-surface-container-lowest border border-light-outline-variant rounded-full px-gutter-sm py-gutter-xs">
+                <button type="button" onclick="changeDetailQty(-1)" aria-label="Decrease quantity" class="w-9 h-9 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-lg hover:bg-light-surface-container-high">-</button>
+                <span id="detail-qty" class="font-mono text-mono-md w-6 text-center tabular-nums">1</span>
+                <button type="button" onclick="changeDetailQty(1)" aria-label="Increase quantity" class="w-9 h-9 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-lg hover:bg-light-surface-container-high">+</button>
+              </div>
+
+              <!-- COMPONENT: button-with-icon -->
+              <button id="detail-add-btn" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" onclick="addCurrentProduct()" class="flex-1 inline-flex items-center justify-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-full bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-light-primary">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">shopping_bag</span>
+                <span id="detail-add-label" data-design-text-token="label-lg">Add · $8.50</span>
+              </button>
+            </div>
+
+            <!-- Product Details Specs -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter-md pt-gutter-md border-t border-light-outline-variant">
+              <div class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface">KEY INGREDIENTS</span>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">Non-GMO sunflower oil, Sichuan chili flakes, fried shallots, black truffle essence.</p>
+              </div>
+              <div class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface">DIETARY &amp; STORAGE</span>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">100% Plant-based · Gluten-free · Store in a cool pantry up to 6 months.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Quick Add Pairings Section -->
+      <section class="max-w-7xl mx-auto px-gutter-md lg:px-page-margin pb-section">
+        <div class="flex flex-wrap items-center justify-between gap-gutter-md mb-gutter-lg">
+          <div class="flex flex-col gap-gutter-xs">
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile lg:text-headline-lg text-light-on-surface">Quick add pairings</h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">One-tap favorites people bundle with chili crisp.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-lg items-stretch">
+
+          <!-- Quick Add 1 -->
+          <!-- COMPONENT: card-action -->
+          <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full flex flex-col justify-between bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-gutter-md gap-gutter-sm hover:border-light-primary transition-colors duration-state-change ease-state-change">
+            <div class="relative aspect-square w-full rounded-md bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAMPczDxrykmkDiYKBwARN--cu4Fe7aPv5AJ6K09hxjXFAERGyNoyRbV2hXOWiUIa8LFYG9UiG7XsezyqbOOp44tMblfoCr3k7_MpgYvUBX221u4FoUX9AE39B8P4M3tOAvQoZ4GpGaEWR_Fy_I_pXt3qkZ1duPCCBGt_w9Sco3c15AWqfPsu4YwjQIbD6SGYY1MmpVXybvBNdptITKe86TBgtqAUfdBILc2bKg1cIY-gWLU-Kq2bY2sw" alt="Spicy Rose Carbonara Ramen" class="w-full h-full object-cover">
+              <span class="absolute top-gutter-sm left-gutter-sm inline-flex items-center px-gutter-sm py-gutter-xs rounded-full bg-light-secondary-container text-light-on-secondary-container font-label text-label-sm">TOP PAIRING</span>
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">2-Pack · Viral Pantry</span>
+              <h3 data-design-text-token="title-md" class="font-body text-title-md text-light-on-surface">Spicy Rose Carbonara Ramen</h3>
+            </div>
+            <footer class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$5.90</span>
+              <button type="button" onclick="addToBag(&#39;Spicy Rose Carbonara Ramen&#39;, 5.90, &#39;../../images/prod_ramen_cup.jpg&#39;)" aria-label="Quick add Spicy Rose Carbonara Ramen" class="inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-gutter-xs rounded-full bg-light-primary text-light-on-primary font-label text-label-sm hover:bg-light-primary-container transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">add</span>
+                <span data-design-text-token="label-sm">Quick add</span>
+              </button>
+            </footer>
+          </article>
+
+          <!-- Quick Add 2 -->
+          <!-- COMPONENT: card-action -->
+          <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full flex flex-col justify-between bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-gutter-md gap-gutter-sm hover:border-light-primary transition-colors duration-state-change ease-state-change">
+            <div class="relative aspect-square w-full rounded-md bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDl34qpvv2It3zfu0WsyM0T14UucBQr9ldIg0IV6rQSDVy2S7q-HPP4nyv4yh1J0Hf6mp0ITla0oISOXLMVGTVabPt6F7w37KkYMyumCtG1xV7EhBlbtSHcUR-JUkzoHvpQ5ofsqK6bIeiDxSENwMsCyc6I_qHQaoRpOIM2cs-rWdFrSDYL38rmmM3dpG98F0jPT4PoELN8K20rBkiaDHiWdLGvPXmh3gWmTqra2NDLGGcEBNESpTzwcQ" alt="Sparkling Matcha Yuzu Tonic" class="w-full h-full object-cover">
+              <span class="absolute top-gutter-sm left-gutter-sm inline-flex items-center px-gutter-sm py-gutter-xs rounded-full bg-light-tertiary-container text-light-on-tertiary-container font-label text-label-sm">CHILLED</span>
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">355ml · Late-Night Snacks</span>
+              <h3 data-design-text-token="title-md" class="font-body text-title-md text-light-on-surface">Sparkling Matcha Yuzu Tonic</h3>
+            </div>
+            <footer class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$3.75</span>
+              <button type="button" onclick="addToBag(&#39;Sparkling Matcha Yuzu Tonic&#39;, 3.75, &#39;../../images/prod_matcha_can.jpg&#39;)" aria-label="Quick add Sparkling Matcha Yuzu Tonic" class="inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-gutter-xs rounded-full bg-light-primary text-light-on-primary font-label text-label-sm hover:bg-light-primary-container transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">add</span>
+                <span data-design-text-token="label-sm">Quick add</span>
+              </button>
+            </footer>
+          </article>
+
+          <!-- Quick Add 3 -->
+          <!-- COMPONENT: card-action -->
+          <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full flex flex-col justify-between bg-light-surface-container-lowest border border-light-outline-variant rounded-lg p-gutter-md gap-gutter-sm hover:border-light-primary transition-colors duration-state-change ease-state-change">
+            <div class="relative aspect-square w-full rounded-md bg-light-surface-container-low overflow-hidden">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrC0xAuoR5G06RJzgPEEQU1AcYRgGmU_mRtfLdMsDbF0d7ur-PAYd5k94f9f-ALLbEo6_NwmWFY8f68JLeN-agwhe7V65MRrZt9mJJaXsxso3VfWtGA9kXVzV_1fKPzrYF_2ktga4BKvVY_Ygp8CgoV81gwQL-4xETpgIlvk0MOQp8IGne8-YpdAHsEfjtkP9SFter705mewri-q03qBZCG6UepPrb09dGAMkjlyHoZ1s7_8Mc5apkncoKYNt8yU6Xw" alt="Country Sourdough and Cultured Butter" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">500g · Fresh &amp; Staples</span>
+              <h3 data-design-text-token="title-md" class="font-body text-title-md text-light-on-surface">Country Sourdough &amp; Butter</h3>
+            </div>
+            <footer class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$9.80</span>
+              <button type="button" onclick="addToBag(&#39;Country Sourdough &amp; Butter&#39;, 9.80, &#39;../../images/prod_sourdough_butter.jpg&#39;)" aria-label="Quick add Country Sourdough and Butter" class="inline-flex items-center justify-center gap-gutter-xs px-gutter-md py-gutter-xs rounded-full bg-light-primary text-light-on-primary font-label text-label-sm hover:bg-light-primary-container transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">add</span>
+                <span data-design-text-token="label-sm">Quick add</span>
+              </button>
+            </footer>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light-on-surface text-light-surface border-t border-light-outline-variant">
+      <div class="max-w-7xl mx-auto px-gutter-md lg:px-page-margin py-section flex flex-col md:flex-row items-start md:items-center justify-between gap-gutter-lg">
+        <div class="flex items-center gap-gutter-sm">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-md bg-light-primary text-light-on-primary">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15.5 6.5C15.5 5.1 14.1 4 12 4C9.7 4 8 5.4 8 7.3C8 9.2 9.6 10.1 12.2 10.8C14.7 11.5 16.5 12.6 16.5 15.2C16.5 17.8 14.4 19.5 11.6 19.5C8.8 19.5 6.8 18 6.5 15.8H9.5C9.8 16.7 10.6 17.2 11.7 17.2C13 17.2 13.8 16.5 13.8 15.4C13.8 14.2 12.9 13.5 10.6 12.9C7.9 12.2 5.4 10.9 5.4 7.5C5.4 4.3 8.1 2 11.9 2C15.4 2 18 3.9 18.2 6.5H15.5Z" fill="currentColor"></path>
+              <circle cx="19" cy="18.5" r="2.2" fill="#B9F079"></circle>
+            </svg>
+          </span>
+          <div class="flex flex-col">
+            <span data-design-text-token="title-lg" class="font-headline text-title-lg text-light-surface">SWAAD AND SWAG RESTAURANT</span>
+            <span data-design-text-token="body-md" class="font-body text-body-md text-light-surface-dim">15-minute groceries &amp; late-night drops.</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-gutter-lg font-label text-label-lg">
+          <a href="../storefront-home/StorefrontHome.html#aisles" class="hover:text-light-secondary-container transition-colors">Aisles</a>
+          <a href="../storefront-home/StorefrontHome.html#catalog" class="hover:text-light-secondary-container transition-colors">Drops</a>
+          <a href="../storefront-home/StorefrontHome.html#bundles" class="hover:text-light-secondary-container transition-colors">Meal Kits</a>
+          <span class="font-mono text-label-sm text-light-secondary-container">OPEN 7AM – 2AM</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Slide-Over Shopping Bag Drawer -->
+  <div id="bag-drawer-overlay" class="fixed inset-0 z-50 hidden bg-light-on-surface/50 flex justify-end" role="dialog" aria-modal="true" aria-labelledby="bag-drawer-title">
+    <div class="w-full max-w-md bg-light-surface text-light-on-surface min-h-[1024px] flex flex-col justify-between border-l border-light-outline-variant p-gutter-lg" data-stitch-vh="min-h-[1024px]===min-h-screen">
+      <div class="flex flex-col gap-gutter-lg">
+        <div class="flex items-center justify-between pb-gutter-md border-b border-light-outline-variant">
+          <h2 id="bag-drawer-title" data-design-text-token="headline-md" class="font-headline text-headline-md text-light-on-surface">Your Bag</h2>
+          <button id="close-bag-btn" type="button" aria-label="Close bag" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-light-surface-container text-light-on-surface hover:bg-light-surface-container-high">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">close</span>
+          </button>
+        </div>
+
+        <div id="bag-items-list" class="flex flex-col gap-gutter-md"></div>
+      </div>
+
+      <div class="flex flex-col gap-gutter-md pt-gutter-lg border-t border-light-outline-variant">
+        <div class="flex items-center justify-between">
+          <span data-design-text-token="title-md" class="font-body text-title-md text-light-on-surface-variant">Subtotal (15-min delivery)</span>
+          <span id="bag-subtotal" data-design-text-token="headline-md" class="font-headline text-headline-md text-light-on-surface tabular-nums">$14.40</span>
+        </div>
+        <button id="checkout-btn" type="button" class="w-full inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-md rounded-full bg-light-primary text-light-on-primary font-label text-label-lg hover:bg-light-primary-container transition-colors duration-state-change">
+          <span id="checkout-btn-label" data-design-text-token="label-lg">Checkout $14.40</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script data-stitch-original-script="c03734eb0e11f1d6===../../images/prod_chili_crisp.jpg|||1852dd461cee99bb===../../images/prod_ramen_cup.jpg|||c03734eb0e11f1d6===../../images/prod_chili_crisp.jpg">
+    let currentPack = 'Single (170g)';
+    let currentUnitPrice = 8.50;
+    let detailQty = 1;
+
+    const bag = [
+      { name: 'Sichuan Truffle Chili Crisp (Single)', price: 8.50, qty: 1, img: 'https://lh3.googleusercontent.com/aida/ALJJyrCMbPP-0BxWOmqKL3RWnkMhcfe3Zvu12GLZu5oj85rhsmhXJONLgqzj2K8T4Kp46BlpfNDrkm1jQN23F12wOYRo95NpE9eZSf8CTbUEAHFGAIkMn-TGW05vqC-4aNcjMzw6jnUvAK0FJ7T68OYdo0rdyMpDw2tIV9yn1PwcPMO0bK-aB4hT83DKpWZU2tZeXMAeUDZeZ0xLp4wW2Z-MgrnPtBI-4H86nuGzlgpJ8Wa9Bu6BH-usvK3PTSM' },
+      { name: 'Spicy Rose Carbonara Ramen', price: 5.90, qty: 1, img: 'https://lh3.googleusercontent.com/aida/ALJJyrAMPczDxrykmkDiYKBwARN--cu4Fe7aPv5AJ6K09hxjXFAERGyNoyRbV2hXOWiUIa8LFYG9UiG7XsezyqbOOp44tMblfoCr3k7_MpgYvUBX221u4FoUX9AE39B8P4M3tOAvQoZ4GpGaEWR_Fy_I_pXt3qkZ1duPCCBGt_w9Sco3c15AWqfPsu4YwjQIbD6SGYY1MmpVXybvBNdptITKe86TBgtqAUfdBILc2bKg1cIY-gWLU-Kq2bY2sw' }
+    ];
+
+    function updateDetailCta() {
+      const total = currentUnitPrice * detailQty;
+      document.getElementById('detail-price').textContent = '$' + currentUnitPrice.toFixed(2);
+      document.getElementById('detail-qty').textContent = detailQty;
+      document.getElementById('detail-add-label').textContent = 'Add · $' + total.toFixed(2);
+    }
+
+    function selectPack(btn) {
+      document.querySelectorAll('.pack-btn').forEach(el => {
+        const active = el === btn;
+        el.setAttribute('aria-pressed', active ? 'true' : 'false');
+        el.className = active
+          ? 'pack-btn flex flex-col items-start p-gutter-md rounded-lg border-2 border-light-primary bg-light-surface-container-lowest text-left transition-colors duration-state-change'
+          : 'pack-btn flex flex-col items-start p-gutter-md rounded-lg border border-light-outline-variant bg-light-surface-container-lowest text-left hover:border-light-primary transition-colors duration-state-change';
+      });
+      currentPack = btn.dataset.pack;
+      currentUnitPrice = parseFloat(btn.dataset.price);
+      updateDetailCta();
+    }
+
+    function changeDetailQty(delta) {
+      detailQty = Math.max(1, detailQty + delta);
+      updateDetailCta();
+    }
+
+    function addCurrentProduct() {
+      const label = 'Sichuan Truffle Chili Crisp (' + currentPack + ')';
+      const existing = bag.find(i => i.name === label);
+      if (existing) {
+        existing.qty += detailQty;
+      } else {
+        bag.push({ name: label, price: currentUnitPrice, qty: detailQty, img: 'https://lh3.googleusercontent.com/aida/ALJJyrCMbPP-0BxWOmqKL3RWnkMhcfe3Zvu12GLZu5oj85rhsmhXJONLgqzj2K8T4Kp46BlpfNDrkm1jQN23F12wOYRo95NpE9eZSf8CTbUEAHFGAIkMn-TGW05vqC-4aNcjMzw6jnUvAK0FJ7T68OYdo0rdyMpDw2tIV9yn1PwcPMO0bK-aB4hT83DKpWZU2tZeXMAeUDZeZ0xLp4wW2Z-MgrnPtBI-4H86nuGzlgpJ8Wa9Bu6BH-usvK3PTSM' });
+      }
+      renderBag();
+      document.getElementById('bag-drawer-overlay').classList.remove('hidden');
+    }
+
+    function renderBag() {
+      const countEl = document.getElementById('bag-count-text');
+      const listEl = document.getElementById('bag-items-list');
+      const subtotalEl = document.getElementById('bag-subtotal');
+      const checkoutLabel = document.getElementById('checkout-btn-label');
+
+      const totalQty = bag.reduce((sum, item) => sum + item.qty, 0);
+      const totalAmt = bag.reduce((sum, item) => sum + item.price * item.qty, 0);
+
+      countEl.textContent = totalQty;
+      subtotalEl.textContent = '$' + totalAmt.toFixed(2);
+      checkoutLabel.textContent = 'Checkout $' + totalAmt.toFixed(2);
+
+      if (bag.length === 0) {
+        listEl.innerHTML = '<p class="font-body text-body-md text-light-on-surface-variant">Your bag is empty. Add some snacks or fresh staples!</p>';
+        return;
+      }
+
+      listEl.innerHTML = bag.map((item, idx) => `
+        <div class="flex items-center justify-between gap-gutter-md bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-sm">
+          <div class="flex items-center gap-gutter-sm">
+            <img src="${item.img}" alt="${item.name}" class="w-14 h-14 rounded-sm object-cover bg-light-surface-container-low" />
+            <div class="flex flex-col">
+              <span class="font-body text-title-md text-light-on-surface">${item.name}</span>
+              <span class="font-mono text-label-sm text-light-on-surface-variant tabular-nums">$${item.price.toFixed(2)}</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-gutter-xs">
+            <button type="button" onclick="updateQty(${idx}, -1)" aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-lg">-</button>
+            <span class="font-mono text-label-lg w-6 text-center tabular-nums">${item.qty}</span>
+            <button type="button" onclick="updateQty(${idx}, 1)" aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-light-surface-container text-light-on-surface font-label text-label-lg">+</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addToBag(name, price, img) {
+      const existing = bag.find(i => i.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        bag.push({ name, price, qty: 1, img });
+      }
+      renderBag();
+      document.getElementById('bag-drawer-overlay').classList.remove('hidden');
+    }
+
+    function updateQty(idx, delta) {
+      bag[idx].qty += delta;
+      if (bag[idx].qty <= 0) bag.splice(idx, 1);
+      renderBag();
+    }
+
+    document.getElementById('open-bag-btn').addEventListener('click', () => {
+      renderBag();
+      document.getElementById('bag-drawer-overlay').classList.remove('hidden');
+    });
+
+    document.getElementById('close-bag-btn').addEventListener('click', () => {
+      document.getElementById('bag-drawer-overlay').classList.add('hidden');
+    });
+
+    renderBag();
+  </script>
+
+
+</body></html>
